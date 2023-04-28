@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  padding: 24px;
+}
+
+#header #hamburg {
+  height: 12px;
+  width: 18px;
+  cursor: pointer;
+}
+
+#header #name {
+  color: #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#section1 {
+  background-image: url(./image/Group\ 55.png);
+  background-size: cover;
+  width: auto;
+  min-height: calc(100vh - 24vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+}
+
+#section1 h1 {
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 55px;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+
+#section1 p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 15px;
+}
+
+#section1 h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #7f8cff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#section1 #icons #list-icons {
+  margin-top: 15px;
+  cursor: pointer;
+  display: flex;
+  list-style: none;
+  justify-content: start;
+  align-items: baseline;
+}
+
+.img {
+  margin-right: 15px;
+}
