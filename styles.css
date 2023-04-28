@@ -27,9 +27,10 @@ body {
   font-style: normal;
   font-size: 25px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-main {
+#section1 {
   background-image: url(./image/Group\ 55.png);
   background-size: cover;
   width: auto;
@@ -40,35 +41,45 @@ main {
   padding: 24px;
 }
 
-h1 {
+#section1 h1 {
   display: flex;
   align-items: center;
   color: #172b4d;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
+  font-size: 55px;
   line-height: 52px;
+  margin-bottom: 20px;
 }
 
-main p {
+#section1 p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  margin-bottom: 15px;
 }
 
-main h4 {
+#section1 h4 {
   font-family: 'Poppins', sans-serif;
   color: #7f8cff;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 24px;
 }
 
-main #icons {
+#section1 #icons #list-icons {
   margin-top: 15px;
   cursor: pointer;
+  display: flex;
+  list-style: none;
+  justify-content: start;
+  align-items: baseline;
+}
+
+.img {
+  margin-right: 15px;
 }
