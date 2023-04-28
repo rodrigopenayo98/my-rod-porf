@@ -25,7 +25,7 @@
 
 # 📖 [Portfolio: Setup and Mobile First] 
 
-This is my Portfolio: Setup and Mobile First project on Microverse 
+This is my Portfolio: Setup and Mobile First project on Microverse.
 A design of the main view of a mobile application was made, which will be responsive.
 
 ## 🛠️ Built With <a name="built-with"></a>
@@ -52,7 +52,7 @@ A design of the main view of a mobile application was made, which will be respon
 ### Key Features 
 
 - *[Add HTML]*
-- *[Add css]*
+- *[Add CSS]*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
