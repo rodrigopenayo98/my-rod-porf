@@ -101,10 +101,11 @@ body {
 
 #section2 {
   background: #e5e5e5;
-  display: flex;
-  flex-direction: column;
-  padding-top: 114px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: (4, auto);
+  grid-gap: 88px;
+  padding: 24px;
 }
 
 .work {
@@ -113,7 +114,11 @@ body {
   border-radius: 16px;
   width: 327px;
   height: 552px;
-  margin: 0 16px 88px 16px;
+  margin: -1px;
+}
+
+.work:first-child {
+  margin-top: 114px;
 }
 
 .work-img {
@@ -245,6 +250,23 @@ body {
   cursor: pointer;
 }
 
+.work-button:hover {
+  background: #6070ff;
+  color: white;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.work-button:active {
+  background: #2230d2;
+  color: white;
+}
+
+.work-button:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+  cursor: not-allowed;
+}
+
 .multipost {
   padding-bottom: 40px;
 }
@@ -262,7 +284,7 @@ body {
   color: #172b4d;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 52px;
   margin-bottom: 20px;
   margin-top: 114px;
@@ -297,7 +319,7 @@ body {
   align-items: baseline;
 }
 
-#section3 button {
+.section3-button {
   width: 160px;
   height: 48px;
   padding: 12px;
@@ -314,6 +336,23 @@ body {
   margin-bottom: 15px;
 }
 
+.section3-button:hover {
+  background: #6070ff;
+  color: white;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.section3-button:active {
+  background: #2230d2;
+  color: white;
+}
+
+.section3-button:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+  cursor: not-allowed;
+}
+
 #section3 h3 {
   color: #396df2;
   font-family: 'Poppins', sans-serif;
@@ -323,11 +362,37 @@ body {
   line-height: 24px;
 }
 
+.menu-categories {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 1rem; /* Espacio entre filas */
+}
+
 .categories {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+  list-style: none;
+  border-radius: 8px;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  box-shadow: 0 2px 2px -2px rgba(167, 158, 158, 0.75);
+}
+
+.categories .li-categories {
+  display: inline-block;
+  width: 85%;
+}
+
+.categories .li-categories:first-child {
+  display: inline-block;
+  width: 85%;
+  padding-bottom: 25px;
+  box-shadow: 0 1px 1px -8px rgba(255, 255, 255, 0.75);
+}
+
+.categories .li-img {
+  justify-content: left;
 }
