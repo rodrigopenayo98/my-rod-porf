@@ -47,9 +47,19 @@ body {
   color: #172b4d;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-size: 55px;
+  font-size: 50px;
   line-height: 52px;
   margin-bottom: 20px;
+}
+
+.work p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin: 16px;
 }
 
 #section1 p {
@@ -60,6 +70,11 @@ body {
   line-height: 24px;
   color: #344563;
   margin-bottom: 15px;
+}
+
+.categories h4 {
+  margin: 0;
+  text-align: right;
 }
 
 #section1 h4 {
@@ -82,4 +97,237 @@ body {
 
 .img {
   margin-right: 15px;
+}
+
+#section2 {
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  padding-top: 114px;
+  align-items: center;
+}
+
+.work {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  width: 327px;
+  height: 552px;
+  margin: 0 16px 88px 16px;
+}
+
+.work-img {
+  width: 295px;
+  height: 220px;
+  margin: 16px 16px 0 16px;
+  cursor: pointer;
+}
+
+.work-title {
+  margin: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.work .information {
+  margin: 16px;
+  list-style: none;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr fit-content 1fr fit-content 1fr;
+  grid-auto-flow: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+}
+
+.categories img {
+  margin-left: 10px;
+}
+
+.dropdown-menu li img {
+  margin-right: 10px;
+}
+
+.work .information > img:nth-child(2),
+.work .information > img:nth-child(4) {
+  grid-column: auto / span 2;
+}
+
+.languages li {
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  padding: 4px 12px;
+  width: 30px;
+  height: 20px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: #6070ff;
+  cursor: pointer;
+}
+
+.dropdown-menu li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.information li:first-child {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu li span {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.languages li:nth-child(3) {
+  width: 60px;
+  height: 20px;
+}
+
+.information li:nth-child(n+2):nth-child(n+3) {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.languages {
+  margin: 16px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  justify-content: flex-start;
+}
+
+.work button {
+  width: 126px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 16px;
+  background-color: #fff;
+  color: #396df2;
+  cursor: pointer;
+}
+
+.multipost {
+  padding-bottom: 40px;
+}
+
+#section3 {
+  min-height: calc(100vh - 24vh);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+#section3 h2 {
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 52px;
+  margin-bottom: 20px;
+  margin-top: 114px;
+}
+
+#section3 p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 15px;
+}
+
+#section3 h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #7f8cff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#section3 #icons #list-icons {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: flex;
+  list-style: none;
+  justify-content: start;
+  align-items: baseline;
+}
+
+#section3 button {
+  width: 160px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  background-color: #fff;
+  color: #396df2;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+#section3 h3 {
+  color: #396df2;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
