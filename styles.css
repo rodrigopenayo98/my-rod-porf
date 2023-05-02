@@ -23,7 +23,7 @@ body {
 
 #header #name {
   color: #6070ff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 25px;
   cursor: pointer;
@@ -45,7 +45,7 @@ body {
   display: flex;
   align-items: center;
   color: #172b4d;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 55px;
   line-height: 52px;
@@ -53,7 +53,7 @@ body {
 }
 
 #section1 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -63,7 +63,7 @@ body {
 }
 
 #section1 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #7f8cff;
   font-style: normal;
   font-weight: 500;
@@ -82,4 +82,24 @@ body {
 
 .img {
   margin-right: 15px;
+}
+
+.section4 {
+  background-image: url(./image/fondo-modificado.png);
+  background-repeat: no-repeat;
+  background-position: 30%;
+  background-position-x: 100%;
+  background-position-y: 40%;
+  background-size: 58% auto;
+  background-color: #6070ff;
+  width: 375px;
+  height: 779px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 103px;
+  border-top-left-radius: 110px;
 }
