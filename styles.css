@@ -70,7 +70,7 @@ body {
   width: 327px;
   font-size: 20px;
   line-height: 28px;
-  color: #EBEBFF;
+  color: #ebebff;
   margin-top: 24px;
 }
 
@@ -468,7 +468,6 @@ body {
   display: flex;
 }
 
-
 .section4 .email {
   margin-top: 20px;
   background: #fff;
@@ -482,7 +481,6 @@ body {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  width: 327px;
 }
 
 .email::placeholder {
@@ -503,7 +501,6 @@ body {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: ;
   cursor: text;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -520,7 +517,6 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
- 
 }
 
 .section4 .button-form {
