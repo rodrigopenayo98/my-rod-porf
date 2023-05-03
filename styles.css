@@ -70,7 +70,7 @@ body {
   width: 327px;
   font-size: 20px;
   line-height: 28px;
-  color: #fff;
+  color: #EBEBFF;
   margin-top: 24px;
 }
 
@@ -439,6 +439,7 @@ body {
   padding-left: 24px;
   padding-top: 103px;
   border-top-left-radius: 110px;
+  margin-top: 176.85px;
 }
 
 .section4 .name {
@@ -446,13 +447,17 @@ body {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 327px;
-  height: 48px;
+  padding: 15px 38px 15px 16px;
   cursor: text;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  width: 327px;
 }
 
 .name::placeholder {
-  justify-content: center;
   padding: 15px 38px 15px 16px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -463,14 +468,21 @@ body {
   display: flex;
 }
 
+
 .section4 .email {
   margin-top: 20px;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   width: 327px;
-  height: 48px;
+  padding: 15px 38px 15px 16px;
   cursor: text;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  width: 327px;
 }
 
 .email::placeholder {
@@ -486,23 +498,29 @@ body {
 }
 
 .section4 .textarea {
+  padding: 15px 38px 15px 16px;
   margin-top: 20px;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 327px;
-  height: 170px;
+  width: ;
   cursor: text;
-}
-
-.textarea::placeholder {
-  color: #b3bac5;
-  padding: 15px 38px 15px 16px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  width: 327px;
+}
+
+.textarea::placeholder {
+  color: #b3bac5;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+ 
 }
 
 .section4 .button-form {
