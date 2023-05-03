@@ -391,8 +391,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   gap: 1rem;
-
-  /* Espacio entre filas */
 }
 
 .categories {
