@@ -693,23 +693,8 @@ body {
     display: none;
   }
 
-  .press-button {
-    display: flex;
-    background-color: #4053fc;
-    color: white;
-    width: 126px;
-    height: 48px;
-    padding: 12px;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    cursor: pointer;
-    margin: 35px 0 0 20px;
-    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  .button-corrected{
+    margin-top: 30px;
   }
 
   .info-desktop {
@@ -1170,13 +1155,6 @@ body {
     letter-spacing: 0;
     text-align: left;
     color: #6b778c;
-  }
-
-  .hand-cursor {
-    display: inline-flex;
-    width: auto;
-    margin-left: 360px;
-    margin-top: -45px;
   }
 
   .selected {
