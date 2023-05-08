@@ -58,7 +58,7 @@ A design of the main view of a mobile application was made, which will be respon
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo Live Demo
+## 🚀 Live Demo
 
 To see the display of my portfolio use this link: (https://rodrigopenayo98.github.io/)
 
