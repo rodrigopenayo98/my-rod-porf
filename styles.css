@@ -26,6 +26,16 @@ body {
   cursor: pointer;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 #header #name {
   color: #6070ff;
   font-family: "Poppins", sans-serif;
@@ -33,6 +43,10 @@ body {
   font-size: 25px;
   cursor: pointer;
   text-decoration: none;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
 
 .navbar-desktop {
