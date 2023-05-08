@@ -9,6 +9,7 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
+  - [LiveDemo](#LiveDemo)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
@@ -62,6 +63,9 @@ A design of the main view of a mobile application was made, which will be respon
 
 To get a local copy up and running, follow these steps.
 just visit my repo folder (https://github.com/rodrigopenayo98/my-rod-porf/tree/main-branch)
+
+
+## Live Demo
 
 To see the display of my portfolio use this link: (https://rodrigopenayo98.github.io/)
 
