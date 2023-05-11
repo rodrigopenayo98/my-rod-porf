@@ -260,7 +260,7 @@ body {
 }
 
 .info-mobile li:first-child {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -754,7 +754,7 @@ body {
   }
 
   .info-desktop li:first-child {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -805,7 +805,7 @@ body {
     background-color: white;
     padding-left: 91px;
     padding-right: 820px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -850,6 +850,10 @@ body {
     text-align: center;
     color: #344563;
     background-color: white;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
   }
 
   #section2 {
@@ -1002,7 +1006,7 @@ body {
   }
 
   .multipost .information li:first-child {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1036,7 +1040,7 @@ body {
   }
 
   #portfolio1 .information li:first-child {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1138,7 +1142,7 @@ body {
   }
 
   #portfolio3 .information li:first-child {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
