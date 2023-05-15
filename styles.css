@@ -257,6 +257,9 @@ body {
 
 .section4 ul li {
   list-style: none;
+  margin: 0;
+  display: block;
+  width: 327px;
 }
 
 .info-mobile li:first-child {
@@ -306,7 +309,7 @@ body {
 }
 
 .x-section img {
-  cursor:  pointer;
+  cursor: pointer;
 }
 
 .dropdown-menu li img {
@@ -559,9 +562,7 @@ body {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  width: 327px;
-  margin-left: 24px;
-  margin-right: 24px;
+  width: 312px;
 }
 
 .name::placeholder {
@@ -580,7 +581,7 @@ body {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 327px;
+  width: 312px;
   padding: 15px 0 15px 16px;
   cursor: text;
   font-family: "Poppins", sans-serif;
@@ -588,8 +589,6 @@ body {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .email::placeholder {
@@ -605,7 +604,6 @@ body {
 }
 
 .section4 .textarea {
-  padding: 15px 0 15px 16px;
   margin-top: 20px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -617,8 +615,6 @@ body {
   font-size: 15px;
   line-height: 24px;
   width: 327px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .textarea::placeholder {
@@ -645,7 +641,6 @@ body {
   color: #396df2;
   cursor: pointer;
   margin-top: 22px;
-  margin-left: 24px;
 }
 
 .button-form:hover {
@@ -720,6 +715,11 @@ body {
   color: #fff;
   padding: 20px 0 20px 28px;
   cursor: pointer;
+  height: 24px;
+  width: 251px;
+  left: 0;
+  top: 8px;
+  border-radius: nullpx;
 }
 
 .x-section {
