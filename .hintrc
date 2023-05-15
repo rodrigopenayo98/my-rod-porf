@@ -1,23 +1,12 @@
-// 20230427225717
-// https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.hintrc
-
 {
   "connector": {
     "name": "local",
     "options": {
-      "pattern": [
-        "**",
-        "!.git/**",
-        "!node_modules/**"
-      ]
+      "pattern": ["**", "!.git/**", "!node_modules/**"]
     }
   },
-  "extends": [
-    "development"
-  ],
-  "formatters": [
-    "stylish"
-  ],
+  "extends": ["development"],
+  "formatters": ["stylish"],
   "hints": [
     "button-type",
     "disown-opener",
