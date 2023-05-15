@@ -548,7 +548,7 @@ body {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  padding: 15px 0px 15px 16px;
+  padding: 15px 0 15px 16px;
   cursor: text;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -577,7 +577,7 @@ body {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   width: 327px;
-  padding: 15px 0px 15px 16px;
+  padding: 15px 0 15px 16px;
   cursor: text;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -601,7 +601,7 @@ body {
 }
 
 .section4 .textarea {
-  padding: 15px 0px 15px 16px;
+  padding: 15px 0 15px 16px;
   margin-top: 20px;
   background: #fff;
   border: 1px solid #cfd8dc;
