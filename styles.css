@@ -167,9 +167,14 @@ body {
   margin: -1px;
 }
 
-.work:first-child {
+#portfolio1{
   margin-top: 114px;
 }
+
+#portfolio4{
+  margin-bottom: 114px;
+}
+
 
 .work-img {
   width: 295px;
