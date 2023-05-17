@@ -19,7 +19,7 @@
         <img src="./image/x-icon.png" alt="" />
       </div>
       <div class="navbar-menu-toggle">
-        <a href="#section1" class="items-menu-toggle">Portfolio</a>
+        <a href="#section2" class="items-menu-toggle">Portfolio</a>
         <a href="#section3" class="items-menu-toggle">About</a>
         <a href="#section4" class="items-menu-toggle">Contact</a>
       </div>
@@ -109,6 +109,7 @@
         </div>
       </section>
       <section id="section2">
+        <div id="myModal" class="popup-code"></div>
         <div id="portfolio1" class="work">
           <img class="work-img img-replace" src="./image/image-work1.png" />
           <img class="work-img new-image" src="./image/new-image.png" />
@@ -130,7 +131,7 @@
               <li>css</li>
               <li>javaScript</li>
             </ul>
-            <button class="work-button">See Project</button>
+            <button class="work-button" onclick="onClickProject(0)">See Project</button>
           </div>
         </div>
         <div id="portfolio2" class="work multipost">
@@ -172,7 +173,7 @@
               <li>css</li>
               <li>javaScript</li>
             </ul>
-            <button class="work-button">See Project</button>
+            <button class="work-button" onclick="onClickProject(1)">See Project</button>
           </div>
         </div>
         <div id="portfolio3" class="work selected">
@@ -215,9 +216,7 @@
               <li>css</li>
               <li>javaScript</li>
             </ul>
-            <button class="work-button hidden-button">See Project</button>
-            <button class="press-button">See Project</button>
-            <img src="./image/hand-cursor 1.png" class="hand-cursor" />
+            <button class="work-button work-button3" onclick="onClickProject(2)">See Project</button>
           </div>
         </div>
         <div id="portfolio4" class="work multipost">
@@ -259,7 +258,7 @@
               <li>css</li>
               <li>javaScript</li>
             </ul>
-            <button class="work-button">See Project</button>
+            <button class="work-button" onclick="onClickProject(3)">See Project</button>
           </div>
         </div>
       </section>
@@ -413,3 +412,4 @@
     <script src="./index.js"></script>
   </body>
 </html>
+
