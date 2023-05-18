@@ -866,7 +866,9 @@ body {
   width: 311px;
 
   /* height: auto; */
-  max-height: 100vh;  /* probando */
+  max-height: 100vh;
+
+  /* probando */
   border-radius: 16px;
   background-color: #fff;
   padding: 16px;
@@ -1041,7 +1043,8 @@ body {
     cursor: pointer;
     margin: 35px 0 0 20px;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  } 
+  }
+
   .hidden-button {
     display: none;
   }
@@ -1672,10 +1675,6 @@ body {
 
   .section4 .button-form {
     margin-left: 30%;
-  }
-
-  .button-corrected {
-    margin-top: 30px;
   }
 
   /* Estilos para la ventana emergente */
