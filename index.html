@@ -217,8 +217,7 @@
           that you need built or a project that needs coding. I’d love to help
           with it!!
         </p>
-
-        <form action="https://formspree.io/f/xyyvabjj" method="POST">
+        <form id="form" action="https://formspree.io/f/xyyvabjj" method="POST">
           <ul>
             <li>
               <input
@@ -232,6 +231,7 @@
             </li>
             <li>
               <input
+                id="email"
                 name="email"
                 class="email"
                 type="email"
@@ -252,10 +252,10 @@
               ></textarea>
             </li>
             <li>
-              <button class="button-form">Get in touch</button>
+              <button type="submit" class="button-form" id="button-form">Get in touch</button>
             </li>
           </ul>
-        </form>
+        </form>
       </section>
       <div id="myModal" class="popup-code"></div>
     </main>
