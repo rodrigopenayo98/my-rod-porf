@@ -6,6 +6,9 @@
 body {
   width: 100%;
   background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .languages-ruby {
@@ -18,6 +21,7 @@ body {
   background-color: white;
   align-items: center;
   padding: 24px;
+  width: 327px;
 }
 
 #header #hamburg {
@@ -819,6 +823,7 @@ body {
   border-radius: 16px;
   background-color: #fff;
   padding: 16px;
+  overflow-y: auto;
 }
 
 .popup-code {
@@ -879,12 +884,26 @@ body {
 .popup-details {
   display: flex;
   list-style: none;
-  margin: 15px 0 4px 0;
+  margin: 15px 0 4px 0px;
+  justify-content: left;
+  align-items: center;
+
+}
+
+.popup-details img{
+  width: auto;
+  padding-top: 8px;
+}
+
+.popup-details li{
+  width: auto;
+  display: flex;
+  padding-right: 13px;
 }
 
 .popup-details li:nth-child(5) {
   height: 16px;
-  width: 29px;
+  width: auto;
   left: 0;
   top: 8px;
   border-radius: nullpx;
