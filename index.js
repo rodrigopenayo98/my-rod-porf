@@ -14,6 +14,158 @@ menuLinks.forEach((link) => {
   link.addEventListener('click', toggleMenu);
 });
 
+const cardsData = [
+  {
+    id: 'portfolio1',
+    class: 'work',
+    img: './image/image-work1.png',
+    img2: './image/new-image.png',
+    title: 'Tonic',
+    title2: 'Tonic',
+    infoMobile1: 'CANOPY',
+    infoMobile2: 'Back End Dev',
+    infoMobile3: '2015',
+    infoDesktop1: 'CANOPY',
+    infoDesktop2: 'Back End Dev',
+    infoDesktop3: '2015',
+    p1: 'A daily selection of privately personalized reads; no accounts orsign-ups required.',
+    p2: 'A daily selection of privately personalized reads; no accounts orsign-ups required.',
+    langMobile1: 'html',
+    langMobile2: 'css',
+    langMobile3: 'javaScript',
+    langDesk1: 'html',
+    langDesk2: 'css',
+    langDesk3: 'javaScript',
+    langDesk4: '',
+    classButtons: 'work-button',
+    onClickButton: '0',
+  },
+  {
+    id: 'portfolio2',
+    class: 'work multipost',
+    img: './image/image-work22.png',
+    img2: './image/image-work4.png',
+    title: 'Multi-Post Stories',
+    title2: 'Multi-Post Stories',
+    infoMobile1: 'CANOPY',
+    infoMobile2: 'Back End Dev',
+    infoMobile3: '2015',
+    infoDesktop1: 'FACEBOOK',
+    infoDesktop2: 'Full Stuck Dev',
+    infoDesktop3: '2015',
+    p1: 'A daily selection of privately personalized reads; no accounts orsign-ups required.',
+    p2: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    langMobile1: 'html',
+    langMobile2: 'css',
+    langMobile3: 'javaScript',
+    langDesk1: 'html',
+    langDesk2: 'Ruby on rails',
+    langDesk3: 'css',
+    langDesk4: 'javaScript',
+    classButtons: 'work-button',
+    onClickButton: '1',
+  },
+  {
+    id: 'portfolio3',
+    class: 'work selected',
+    img: './image/image-work3.png',
+    img2: './image/image-work1.png',
+    title: 'Tonic',
+    title2: 'Facebook 360',
+    infoMobile1: 'CANOPY',
+    infoMobile2: 'Back End Dev',
+    infoMobile3: '2015',
+    infoDesktop1: 'FACEBOOK',
+    infoDesktop2: 'Full Stuck Dev',
+    infoDesktop3: '2015',
+    p1: 'A daily selection of privately personalized reads; no accounts orsign-ups required.',
+    p2: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    langMobile1: 'html',
+    langMobile2: 'css',
+    langMobile3: 'javaScript',
+    langDesk1: 'html',
+    langDesk2: 'Ruby on rails',
+    langDesk3: 'css',
+    langDesk4: 'javaScript',
+    classButtons: 'work-button button-corrected ',
+    onClickButton: '2',
+  },
+  {
+    id: 'portfolio4',
+    class: 'work multipost',
+    img: './image/image-work4.png',
+    img2: './image/image-work2.png',
+    title: 'Multi-Post Stories',
+    title2: 'Uber Navigation',
+    infoMobile1: 'CANOPY',
+    infoMobile2: 'Back End Dev',
+    infoMobile3: '2015',
+    infoDesktop1: 'Uber',
+    infoDesktop2: 'Lead Developer',
+    infoDesktop3: '2015',
+    p1: 'A daily selection of privately personalized reads; no accounts orsign-ups required.',
+    p2: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    langMobile1: 'html',
+    langMobile2: 'css',
+    langMobile3: 'javaScript',
+    langDesk1: 'html',
+    langDesk2: 'Ruby on rails',
+    langDesk3: 'css',
+    langDesk4: 'javaScript',
+    classButtons: 'work-button',
+    onClickButton: '3',
+  },
+
+];
+
+let cards = '';
+cardsData.forEach((card) => {
+  cards += `
+    <div id="${card.id}" class="${card.class}">
+      <img class="work-img img-replace" src="${card.img}" />
+      <img class="new-image" src="${card.img2}" />
+      <div class="work-content">
+        <h2 class="work-title">${card.title}</h2>
+        <h2 class="desktop-title">${card.title2}</h2>
+        <ul class="info-mobile">
+          <li>${card.infoMobile1}</li>
+          <img src="./image/point.png" />
+          <li>${card.infoMobile2}</li>
+          <img src="./image/point.png" />
+          <li>${card.infoMobile3}</li>
+        </ul>
+        <ul class="info-desktop">
+          <li>${card.infoDesktop1}</li>
+          <img src="./image/point.png" />
+          <li>${card.infoDesktop2}</li>
+          <img src="./image/point.png" />
+          <li>${card.infoDesktop3}</li>
+        </ul>
+        <p class="work-p old-p">
+          ${card.p1}
+        </p>
+        <p id="p2p" class="new-p">
+          ${card.p2}
+        </p>
+        <ul class="languages-hidden">
+          <li>${card.langMobile1}</li>
+          <li>${card.langMobile2}</li>
+          <li>${card.langMobile3}</li>
+        </ul>
+        <ul class="languages-ruby">
+          <li>${card.langDesk1}</li>
+          <li>${card.langDesk2}</li>
+          <li>${card.langDesk3}</li>
+          <li>${card.langDesk4}</li>
+        </ul>
+        <button class="${card.classButtons}" onclick="onClickProject(${card.onClickButton})">See Project</button>
+      </div>
+    </div>
+  `;
+});
+
+document.querySelector('#section2').innerHTML = cards;
+
 const projects = [
   {
     name: 'Tonic',
