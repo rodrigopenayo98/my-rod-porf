@@ -1024,10 +1024,6 @@ body {
     display: none;
   }
 
-  .hidden-button {
-    display: none;
-  }
-
   .press-button {
     display: flex;
     background-color: #4053fc;
