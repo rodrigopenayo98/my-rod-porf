@@ -1,74 +1,78 @@
-const hamburg = document.getElementById('hamburg');
-const xSection = document.querySelector('.x-section');
-const menuToggle = document.querySelector('.menu-toggle');
-const menuLinks = document.querySelectorAll('.items-menu-toggle');
+const hamburg = document.getElementById("hamburg");
+const xSection = document.querySelector(".x-section");
+const menuToggle = document.querySelector(".menu-toggle");
+const menuLinks = document.querySelectorAll(".items-menu-toggle");
 
 function toggleMenu() {
-  menuToggle.classList.toggle('show');
+  menuToggle.classList.toggle("show");
 }
 
-xSection.addEventListener('click', toggleMenu);
-hamburg.addEventListener('click', toggleMenu);
+xSection.addEventListener("click", toggleMenu);
+hamburg.addEventListener("click", toggleMenu);
 
 menuLinks.forEach((link) => {
-  link.addEventListener('click', toggleMenu);
+  link.addEventListener("click", toggleMenu);
 });
 
 const projects = [
   {
-    name: 'Tonic',
-    details: ['CANOPY', 'Back End Dev', '2015'],
-    img: './image/image-work1.png',
-    img2: './image/bg-desktop1.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
-    technologies: ['html', 'css', 'javaScript'],
-    technologies2: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-    liveLink: 'https://exemple.com.ar/',
-    fontLink: 'https://exemple.com.ar/',
+    name: "Tonic",
+    details: ["CANOPY", "Back End Dev", "2015"],
+    img: "./image/image-work1.png",
+    img2: "./image/bg-desktop1.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
+    technologies: ["html", "css", "javaScript"],
+    technologies2: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
+    liveLink: "https://exemple.com.ar/",
+    fontLink: "https://exemple.com.ar/",
   },
   {
-    name: 'Multi-Post Stories',
-    details: ['FACEBOOK', 'Full Stuck Dev', '2015'],
-    img: './image/image-work22.png',
-    img2: './image/',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
-    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    technologies2: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-    liveLink: 'https://exemple.com.ar/',
-    fontLink: 'https://exemple.com.ar/',
+    name: "Multi-Post Stories",
+    details: ["FACEBOOK", "Full Stuck Dev", "2015"],
+    img: "./image/image-work22.png",
+    img2: "./image/",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
+    technologies: ["html", "Ruby on rails", "css", "javaScript"],
+    technologies2: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
+    liveLink: "https://exemple.com.ar/",
+    fontLink: "https://exemple.com.ar/",
   },
   {
-    name: 'Facebook 360',
-    details: ['FACEBOOK', 'Full Stuck Dev', '2015'],
-    img: './image/image-work3.png',
-    img2: './image/',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
-    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    technologies2: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-    liveLink: 'https://exemple.com.ar/',
-    fontLink: 'https://exemple.com.ar/',
+    name: "Facebook 360",
+    details: ["FACEBOOK", "Full Stuck Dev", "2015"],
+    img: "./image/image-work3.png",
+    img2: "./image/image-work1.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
+    technologies: ["html", "Ruby on rails", "css", "javaScript"],
+    technologies2: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
+    liveLink: "https://exemple.com.ar/",
+    fontLink: "https://exemple.com.ar/",
   },
   {
-    name: 'Uber Navigation',
-    details: ['Uber', 'Lead Developer', '2018'],
-    img: './image/image-work3.png',
-    img2: './image/',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
-    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-    technologies2: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
-    liveLink: 'https://exemple.com.ar/',
-    fontLink: 'https://exemple.com.ar/',
+    name: "Uber Navigation",
+    details: ["Uber", "Lead Developer", "2018"],
+    img: "./image/image-work4.png",
+    img2: "./image/image-work2.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
+    technologies: ["html", "Ruby on rails", "css", "javaScript"],
+    technologies2: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
+    liveLink: "https://exemple.com.ar/",
+    fontLink: "https://exemple.com.ar/",
   },
 ];
 
 function showPopup() {
-  const myModal = document.getElementById('myModal');
-  myModal.classList.add('show');
+  const myModal = document.getElementById("myModal");
+  myModal.classList.add("show");
 }
 
 function closePopup() {
-  const myModal = document.getElementById('myModal');
-  myModal.classList.remove('show');
+  const myModal = document.getElementById("myModal");
+  myModal.classList.remove("show");
 }
 
 /* eslint-disable */
@@ -144,8 +148,8 @@ function onClickProject(index) {
   myModal.innerHTML = projectHTML;
   showPopup();
 
-  const closeButton = document.querySelector('.popup-btn-close');
-  closeButton.addEventListener('click', closePopup);
+  const closeButton = document.querySelector(".popup-btn-close");
+  closeButton.addEventListener("click", closePopup);
 }
 
 /* eslint-enable */
