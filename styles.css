@@ -1041,6 +1041,13 @@ body {
     cursor: pointer;
     margin: 35px 0 0 20px;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  } 
+  .hidden-button {
+    display: none;
+  }
+
+  .button-corrected {
+    margin-top: 30px;
   }
 
   .info-desktop {
@@ -1573,13 +1580,6 @@ body {
     letter-spacing: 0;
     text-align: left;
     color: #6b778c;
-  }
-
-  .hand-cursor {
-    display: inline-flex;
-    width: auto;
-    margin-left: 360px;
-    margin-top: -45px;
   }
 
   .selected {
