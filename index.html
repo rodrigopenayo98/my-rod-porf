@@ -19,7 +19,7 @@
         <img src="./image/x-icon.png" alt="" />
       </div>
       <div class="navbar-menu-toggle">
-        <a href="#section1" class="items-menu-toggle">Portfolio</a>
+        <a href="#section2" class="items-menu-toggle">Portfolio</a>
         <a href="#section3" class="items-menu-toggle">About</a>
         <a href="#section4" class="items-menu-toggle">Contact</a>
       </div>
@@ -130,7 +130,7 @@
               <li>css</li>
               <li>javaScript</li>
             </ul>
-            <button class="work-button">See Project</button>
+            <button class="work-button" onclick="onClickProject(0)">See Project</button>
           </div>
         </div>
         <div id="portfolio2" class="work multipost">
@@ -172,7 +172,7 @@
               <li>css</li>
               <li>javaScript</li>
             </ul>
-            <button class="work-button">See Project</button>
+            <button class="work-button" onclick="onClickProject(1)">See Project</button>
           </div>
         </div>
         <div id="portfolio3" class="work selected">
@@ -257,7 +257,7 @@
               <li>css</li>
               <li>javaScript</li>
             </ul>
-            <button class="work-button">See Project</button>
+            <button class="work-button" onclick="onClickProject(3)">See Project</button>
           </div>
         </div>
       </section>
@@ -407,7 +407,10 @@
           </ul>
         </form>
       </section>
+      <div id="myModal" class="popup-code"></div>
     </main>
     <script src="./index.js"></script>
   </body>
 </html>
+
+
