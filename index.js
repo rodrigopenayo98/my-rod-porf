@@ -37,9 +37,10 @@ const projects = [
     name: "Tonic",
     details: ["CANOPY", "Back End Dev", "2015"],
     img: "./image/image-work1.png",
-    description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups requerid",
+    img2:"./image/bg-desktop1.png",
+    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
     technologies: ["html", "css", "javaScript"],
+    technologies2: ["HTML", "CSS", "JavaScript", "Ruby","Bootstrap"],
     liveLink: "https://exemple.com.ar/",
     fontLink: "https://exemple.com.ar/",
   },
@@ -47,9 +48,10 @@ const projects = [
     name: "Multi-Post Stories",
     details: ["FACEBOOK", "Full Stuck Dev", "2015"],
     img: "./image/image-work22.png",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. \n \n \n Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
+    img2:"./image/",
+    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
     technologies: ["html", "Ruby on rails", "css", "javaScript"],
+    technologies2: ["HTML", "CSS", "JavaScript", "Ruby","Bootstrap"],
     liveLink: "https://exemple.com.ar/",
     fontLink: "https://exemple.com.ar/",
   },
@@ -57,9 +59,10 @@ const projects = [
     name: "Facebook 360",
     details: ["FACEBOOK", "Full Stuck Dev", "2015"],
     img: "./image/image-work3.png",
-    description:
-      "Exploring the future of media in Facebook's first Virtual Reality \n app; a place to discover and enjoy 360 photos and videos on \n Gear VR.",
+    img2:"./image/",
+    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
     technologies: ["html", "Ruby on rails", "css", "javaScript"],
+    technologies2: ["HTML", "CSS", "JavaScript", "Ruby","Bootstrap"],
     liveLink: "https://exemple.com.ar/",
     fontLink: "https://exemple.com.ar/",
   },
@@ -67,12 +70,12 @@ const projects = [
     name: "Uber Navigation",
     details: ["Uber", "Lead Developer", "2018"],
     img: "./image/image-work3.png",
-    description:
-      "A smart assistant to make driving more safe, efficient, and fun \n by unlocking your most expensive computer: your car.",
+    img2:"./image/",
+    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
     technologies: ["html", "Ruby on rails", "css", "javaScript"],
+    technologies2: ["HTML", "CSS", "JavaScript", "Ruby","Bootstrap"],
     liveLink: "https://exemple.com.ar/",
     fontLink: "https://exemple.com.ar/",
-
   },
 ];
 
@@ -80,12 +83,9 @@ function showPopup() {
   myModal.classList.add("show");
 }
 
-
 function closePopup() {
   myModal.classList.remove("show");
 }
-
-
 
 function onClickProject(index) {
   const project = projects[index];
@@ -108,6 +108,9 @@ function onClickProject(index) {
     <div class="popup-img-container">
       <img src="${project.img}" alt="Project Image" />
     </div>
+    <div class="popup-img-container-desktop">
+      <img src="${project.img2}" alt="Project Image" />
+    </div>
     <div class="popup-body">
       <div class="popup-desc-container-mobile">
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>
@@ -115,11 +118,23 @@ function onClickProject(index) {
       <div class="popup-desc-container-desktop">
       <p>${project.description}</p>
       </div>
+      <div class="tech-and-buttons">
       <div class="popup-technologies-buttons">
         <ul class="popup-technologies">
           <li class="popup-technology1">${project.technologies[0]}</li>
           <li class="popup-technology2">${project.technologies[1]}</li>
           <li class="popup-technology3">${project.technologies[2]}</li>
+        </ul>
+      </div>
+      <div class="popup-tech-buttons-desk">
+        <ul class="popup-technologies">
+          <li class="popup-technology1">${project.technologies2[0]}</li>
+          <li class="popup-technology2">${project.technologies2[1]}</li>
+          <li class="popup-technology3">${project.technologies2[2]}</li>
+        </ul>
+        <ul class="popup-technologies">
+          <li class="popup-technology4">${project.technologies2[3]}</li>
+          <li class="popup-technology5">${project.technologies2[4]}</li>
         </ul>
       </div>
       <div class="popup-buttons">
@@ -131,6 +146,8 @@ function onClickProject(index) {
         See source
           <img src="./image/button2.png" alt="Icono" />
         </a>
+      </div>
+      
       </div>
     </div>
   
@@ -144,4 +161,3 @@ function onClickProject(index) {
   const closeButton = document.querySelector(".popup-btn-close");
   closeButton.addEventListener("click", closePopup);
 }
-
