@@ -1,123 +1,123 @@
-const hamburg = document.getElementById("hamburg");
-const xSection = document.querySelector(".x-section");
-const menuToggle = document.querySelector(".menu-toggle");
-const menuLinks = document.querySelectorAll(".items-menu-toggle");
+const hamburg = document.getElementById('hamburg');
+const xSection = document.querySelector('.x-section');
+const menuToggle = document.querySelector('.menu-toggle');
+const menuLinks = document.querySelectorAll('.items-menu-toggle');
 
 function toggleMenu() {
-  menuToggle.classList.toggle("show");
+  menuToggle.classList.toggle('show');
 }
 
-xSection.addEventListener("click", toggleMenu);
-hamburg.addEventListener("click", toggleMenu);
+xSection.addEventListener('click', toggleMenu);
+hamburg.addEventListener('click', toggleMenu);
 
 menuLinks.forEach((link) => {
-  link.addEventListener("click", toggleMenu);
+  link.addEventListener('click', toggleMenu);
 });
 
 const cardsData = [
   {
-    id: "portfolio1",
-    class: "work",
-    img: "./image/image-work1.png",
-    img2: "./image/new-image.png",
-    title: "Tonic",
-    title2: "Tonic",
-    infoMobile1: "CANOPY",
-    infoMobile2: "Back End Dev",
-    infoMobile3: "2015",
-    infoDesktop1: "CANOPY",
-    infoDesktop2: "Back End Dev",
-    infoDesktop3: "2015",
-    p1: "A daily selection of privately personalized reads; no accounts orsign-ups required.",
-    p2: "A daily selection of privately personalized reads; no accounts orsign-ups required.",
-    langMobile1: "html",
-    langMobile2: "css",
-    langMobile3: "javaScript",
-    langDesk1: "html",
-    langDesk2: "css",
-    langDesk3: "javaScript",
-    langDesk4: "",
-    classButtons: "work-button",
-    onClickButton: "0",
+    id: 'portfolio1',
+    class: 'work',
+    img: './image/image-work1.png',
+    img2: './image/new-image.png',
+    title: 'Tonic',
+    title2: 'Tonic',
+    infoMobile1: 'CANOPY',
+    infoMobile2: 'Back End Dev',
+    infoMobile3: '2015',
+    infoDesktop1: 'CANOPY',
+    infoDesktop2: 'Back End Dev',
+    infoDesktop3: '2015',
+    p1: 'A daily selection of privately personalized reads; no accounts orsign-ups required.',
+    p2: 'A daily selection of privately personalized reads; no accounts orsign-ups required.',
+    langMobile1: 'html',
+    langMobile2: 'css',
+    langMobile3: 'javaScript',
+    langDesk1: 'html',
+    langDesk2: 'css',
+    langDesk3: 'javaScript',
+    langDesk4: '',
+    classButtons: 'work-button',
+    onClickButton: '0',
   },
   {
-    id: "portfolio2",
-    class: "work multipost",
-    img: "./image/image-work22.png",
-    img2: "./image/image-work4.png",
-    title: "Multi-Post Stories",
-    title2: "Multi-Post Stories",
-    infoMobile1: "CANOPY",
-    infoMobile2: "Back End Dev",
-    infoMobile3: "2015",
-    infoDesktop1: "FACEBOOK",
-    infoDesktop2: "Full Stuck Dev",
-    infoDesktop3: "2015",
-    p1: "A daily selection of privately personalized reads; no accounts orsign-ups required.",
-    p2: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    langMobile1: "html",
-    langMobile2: "css",
-    langMobile3: "javaScript",
-    langDesk1: "html",
-    langDesk2: "Ruby on rails",
-    langDesk3: "css",
-    langDesk4: "javaScript",
-    classButtons: "work-button",
-    onClickButton: "1",
+    id: 'portfolio2',
+    class: 'work multipost',
+    img: './image/image-work22.png',
+    img2: './image/image-work4.png',
+    title: 'Multi-Post Stories',
+    title2: 'Multi-Post Stories',
+    infoMobile1: 'CANOPY',
+    infoMobile2: 'Back End Dev',
+    infoMobile3: '2015',
+    infoDesktop1: 'FACEBOOK',
+    infoDesktop2: 'Full Stuck Dev',
+    infoDesktop3: '2015',
+    p1: 'A daily selection of privately personalized reads; no accounts orsign-ups required.',
+    p2: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    langMobile1: 'html',
+    langMobile2: 'css',
+    langMobile3: 'javaScript',
+    langDesk1: 'html',
+    langDesk2: 'Ruby on rails',
+    langDesk3: 'css',
+    langDesk4: 'javaScript',
+    classButtons: 'work-button',
+    onClickButton: '1',
   },
   {
-    id: "portfolio3",
-    class: "work selected",
-    img: "./image/image-work3.png",
-    img2: "./image/image-work1.png",
-    title: "Tonic",
-    title2: "Facebook 360",
-    infoMobile1: "CANOPY",
-    infoMobile2: "Back End Dev",
-    infoMobile3: "2015",
-    infoDesktop1: "FACEBOOK",
-    infoDesktop2: "Full Stuck Dev",
-    infoDesktop3: "2015",
-    p1: "A daily selection of privately personalized reads; no accounts orsign-ups required.",
+    id: 'portfolio3',
+    class: 'work selected',
+    img: './image/image-work3.png',
+    img2: './image/image-work1.png',
+    title: 'Tonic',
+    title2: 'Facebook 360',
+    infoMobile1: 'CANOPY',
+    infoMobile2: 'Back End Dev',
+    infoMobile3: '2015',
+    infoDesktop1: 'FACEBOOK',
+    infoDesktop2: 'Full Stuck Dev',
+    infoDesktop3: '2015',
+    p1: 'A daily selection of privately personalized reads; no accounts orsign-ups required.',
     p2: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    langMobile1: "html",
-    langMobile2: "css",
-    langMobile3: "javaScript",
-    langDesk1: "html",
-    langDesk2: "Ruby on rails",
-    langDesk3: "css",
-    langDesk4: "javaScript",
-    classButtons: "work-button button-corrected ",
-    onClickButton: "2",
+    langMobile1: 'html',
+    langMobile2: 'css',
+    langMobile3: 'javaScript',
+    langDesk1: 'html',
+    langDesk2: 'Ruby on rails',
+    langDesk3: 'css',
+    langDesk4: 'javaScript',
+    classButtons: 'work-button button-corrected ',
+    onClickButton: '2',
   },
   {
-    id: "portfolio4",
-    class: "work multipost",
-    img: "./image/image-work4.png",
-    img2: "./image/image-work2.png",
-    title: "Multi-Post Stories",
-    title2: "Uber Navigation",
-    infoMobile1: "CANOPY",
-    infoMobile2: "Back End Dev",
-    infoMobile3: "2015",
-    infoDesktop1: "Uber",
-    infoDesktop2: "Lead Developer",
-    infoDesktop3: "2015",
-    p1: "A daily selection of privately personalized reads; no accounts orsign-ups required.",
-    p2: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-    langMobile1: "html",
-    langMobile2: "css",
-    langMobile3: "javaScript",
-    langDesk1: "html",
-    langDesk2: "Ruby on rails",
-    langDesk3: "css",
-    langDesk4: "javaScript",
-    classButtons: "work-button",
-    onClickButton: "3",
+    id: 'portfolio4',
+    class: 'work multipost',
+    img: './image/image-work4.png',
+    img2: './image/image-work2.png',
+    title: 'Multi-Post Stories',
+    title2: 'Uber Navigation',
+    infoMobile1: 'CANOPY',
+    infoMobile2: 'Back End Dev',
+    infoMobile3: '2015',
+    infoDesktop1: 'Uber',
+    infoDesktop2: 'Lead Developer',
+    infoDesktop3: '2015',
+    p1: 'A daily selection of privately personalized reads; no accounts orsign-ups required.',
+    p2: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    langMobile1: 'html',
+    langMobile2: 'css',
+    langMobile3: 'javaScript',
+    langDesk1: 'html',
+    langDesk2: 'Ruby on rails',
+    langDesk3: 'css',
+    langDesk4: 'javaScript',
+    classButtons: 'work-button',
+    onClickButton: '3',
   },
 ];
 
-let cards = "";
+let cards = '';
 cardsData.forEach((card) => {
   cards += `
     <div id="${card.id}" class="${card.class}">
@@ -163,67 +163,67 @@ cardsData.forEach((card) => {
   `;
 });
 
-document.querySelector("#section2").innerHTML = cards;
+document.querySelector('#section2').innerHTML = cards;
 
 const projects = [
   {
-    name: "Tonic",
-    details: ["CANOPY", "Back End Dev", "2015"],
-    img: "./image/image-work1.png",
-    img2: "./image/bg-desktop1.png",
+    name: 'Tonic',
+    details: ['CANOPY', 'Back End Dev', '2015'],
+    img: './image/image-work1.png',
+    img2: './image/bg-desktop1.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
-    technologies: ["html", "css", "javaScript"],
-    technologies2: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
-    liveLink: "https://exemple.com.ar/",
-    fontLink: "https://exemple.com.ar/",
+    technologies: ['html', 'css', 'javaScript'],
+    technologies2: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
+    liveLink: 'https://exemple.com.ar/',
+    fontLink: 'https://exemple.com.ar/',
   },
   {
-    name: "Multi-Post Stories",
-    details: ["FACEBOOK", "Full Stuck Dev", "2015"],
-    img: "./image/image-work22.png",
-    img2: "./image/image-work4.png",
+    name: 'Multi-Post Stories',
+    details: ['FACEBOOK', 'Full Stuck Dev', '2015'],
+    img: './image/image-work22.png',
+    img2: './image/image-work4.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
-    technologies: ["html", "Ruby on rails", "css", "javaScript"],
-    technologies2: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
-    liveLink: "https://exemple.com.ar/",
-    fontLink: "https://exemple.com.ar/",
+    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    technologies2: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
+    liveLink: 'https://exemple.com.ar/',
+    fontLink: 'https://exemple.com.ar/',
   },
   {
-    name: "Facebook 360",
-    details: ["FACEBOOK", "Full Stuck Dev", "2015"],
-    img: "./image/image-work3.png",
-    img2: "./image/image-work1.png",
+    name: 'Facebook 360',
+    details: ['FACEBOOK', 'Full Stuck Dev', '2015'],
+    img: './image/image-work3.png',
+    img2: './image/image-work1.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
-    technologies: ["html", "Ruby on rails", "css", "javaScript"],
-    technologies2: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
-    liveLink: "https://exemple.com.ar/",
-    fontLink: "https://exemple.com.ar/",
+    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    technologies2: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
+    liveLink: 'https://exemple.com.ar/',
+    fontLink: 'https://exemple.com.ar/',
   },
   {
-    name: "Uber Navigation",
-    details: ["Uber", "Lead Developer", "2018"],
-    img: "./image/image-work4.png",
-    img2: "./image/image-work2.png",
+    name: 'Uber Navigation',
+    details: ['Uber', 'Lead Developer', '2018'],
+    img: './image/image-work4.png',
+    img2: './image/image-work2.png',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s",
-    technologies: ["html", "Ruby on rails", "css", "javaScript"],
-    technologies2: ["HTML", "CSS", "JavaScript", "Ruby", "Bootstrap"],
-    liveLink: "https://exemple.com.ar/",
-    fontLink: "https://exemple.com.ar/",
+    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    technologies2: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Bootstrap'],
+    liveLink: 'https://exemple.com.ar/',
+    fontLink: 'https://exemple.com.ar/',
   },
 ];
 
 function showPopup() {
-  const myModal = document.getElementById("myModal");
-  myModal.classList.add("show");
+  const myModal = document.getElementById('myModal');
+  myModal.classList.add('show');
 }
 
 function closePopup() {
-  const myModal = document.getElementById("myModal");
-  myModal.classList.remove("show");
+  const myModal = document.getElementById('myModal');
+  myModal.classList.remove('show');
 }
 
 /* eslint-disable */
@@ -307,37 +307,37 @@ function onClickProject(index) {
 
 /* form validation */
 
-const form = document.querySelector("#form");
+const form = document.querySelector('#form');
 
 function validateEmail() {
-  const emailInput = document.querySelector("#email");
+  const emailInput = document.querySelector('#email');
   const email = emailInput.value.trim();
 
   if (email !== email.toLowerCase()) {
-    const errorElement = document.createElement("span");
-    errorElement.classList.add("error-message");
-    errorElement.textContent = "*********Email must be in lower case.********";
+    const errorElement = document.createElement('span');
+    errorElement.classList.add('error-message');
+    errorElement.textContent = '*********Email must be in lower case.********';
 
-    const submitButton = document.querySelector("#button-form");
-    submitButton.insertAdjacentElement("afterend", errorElement);
+    const submitButton = document.querySelector('#button-form');
+    submitButton.insertAdjacentElement('afterend', errorElement);
   } else {
     form.submit();
   }
 }
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   validateEmail();
 });
 
 /* local storage configuration */
 
-const nameInput = document.querySelector(".name");
-const messageInput = document.querySelector(".textarea");
-const emailInput = document.querySelector(".email");
+const nameInput = document.querySelector('.name');
+const messageInput = document.querySelector('.textarea');
+const emailInput = document.querySelector('.email');
 
-window.addEventListener("load", () => {
-  const formData = JSON.parse(localStorage.getItem("formData"));
+window.addEventListener('load', () => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
 
   if (formData) {
     nameInput.value = formData.name;
@@ -346,16 +346,16 @@ window.addEventListener("load", () => {
   }
 });
 
-form.addEventListener("input", () => {
+form.addEventListener('input', () => {
   const formData = {
     name: nameInput.value,
     email: emailInput.value,
     message: messageInput.value,
   };
 
-  localStorage.setItem("formData", JSON.stringify(formData));
+  localStorage.setItem('formData', JSON.stringify(formData));
 });
 
-form.addEventListener("submit", () => {
-  localStorage.removeItem("formData");
+form.addEventListener('submit', () => {
+  localStorage.removeItem('formData');
 });
