@@ -706,7 +706,8 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  width: 327px;
+  width: 295px;
+  padding: 16px;
 }
 
 .textarea::placeholder {
@@ -716,6 +717,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  padding: 5px;
 }
 
 .section4 .button-form {
@@ -1920,4 +1922,12 @@ body {
     border-radius: 8px;
     color: #fff;
   }
+
+  .error-message {
+    color: red;
+  }
+}
+
+.error-message {
+  color: red;
 }
