@@ -329,3 +329,29 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   validateEmail();
 });
+
+/* local storage configuration */
+
+const nameInput = document.querySelector('.name');
+const messageInput = document.querySelector('.textarea');
+const emailInput = document.querySelector('.email');
+
+window.addEventListener('load', () => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+
+  if (formData) {
+    nameInput.value = formData.name;
+    emailInput.value = formData.email;
+    messageInput.value = formData.message;
+  }
+});
+
+form.addEventListener('input', () => {
+  const formData = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
